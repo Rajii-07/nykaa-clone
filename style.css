@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+}
+
+.app-container {
+}
+
+.header-sec {
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("./public/photos/common-strip.png");
+}
+
+.quick-links-sec {
+  display: flex;
+  align-items: center;
+}
+
+.app-link-container,
+.store-link-container {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  border-right: 2px solid;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.banner-text-container {
+  overflow-y: hidden;
+  width: 50%;
+}
+
+.banner-text {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 40px;
+  margin-left: 10px;
+  animation: move-up 3s linear infinite;
+}
+
+.banner-link-img {
+  width: 30px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+
+.nav-app-sec {
+  display: flex;
+  align-items: center;
+  width: 56%;
+}
+
+.nav-links-container {
+  display: flex;
+  list-style: none;
+  gap: 9px;
+}
+
+.nav-links-container > li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nav-links-container > li:hover {
+  color: #ec2988;
+}
+
+.app-search-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 50px;
+}
+
+.app-search-container > input {
+  border: 0;
+  font-weight: bold;
+  outline: 0;
+}
+
+.nav-user-sec {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.nav-user-sec > button {
+  background-color: #ec2988;
+  border: 0;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.nav-user-sec > svg {
+  cursor: pointer;
+}
+
+.app-logo {
+  width: 70px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.offer-board {
+  width: inherit;
+}
+
+.offer-board > img {
+  width: 100%;
+}
+
+.bank-offers-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bank-img {
+  width: 520px;
+}
+
+.categories-scroll-container {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories-card {
+  text-align: center;
+  margin: 0 27px;
+}
+
+.categories-card > h1 {
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: grey;
+  font-size: 15px;
+}
+
+.product-offers-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.product-offers-container-heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 15px;
+  color: #fc2295;
+}
+
+.product {
+  font-size: 10px;
+  width: 170px;
+  margin: 0 27px;
+}
+
+.product > h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.product > p {
+  color: gray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.product-offers-container-scroll {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(214, 217, 220, 0.5);
+  border-radius: 5px;
+}
+
+.img-1 {
+  background-image: url(public/photos/offers/facewash.png);
+}
+.img-2 {
+  background-image: url(public/photos/offers/tresmeShampoo.png);
+}
+.img-3 {
+  background-image: url(public/photos/offers/makeUpKit.png);
+}
+.img-4 {
+  background-image: url(public/photos/offers/preprime.png);
+}
+.img-5 {
+  background-image: url(public/photos/offers/loreal-extaodinaryoil.png);
+}
+.img-6 {
+  background-image: url(public/photos/offers/preprime.png);
+}
+.img-7 {
+  background-image: url(public/photos/offers/coffee.png);
+}
+
+.deleted-price {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.discount {
+  color: rgb(17, 187, 31);
+  font-weight: 300;
+}
+
+.image-card > p {
+  color: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.brands-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.brands-container-scroll {
+  margin: 10px 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brands-container > h1 {
+  color: #fc2295;
+  margin: 30px 0 30px 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.brand-card {
+  width: fit-content;
+}
+
+.coupons-card-img {
+  width: 66%;
+}
+
+.influencer-container > h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px;
+  color: #ec2988;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.influencer-container-scroll {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.influencer-card {
+  text-align: center;
+  width: 200px;
+  font-size: 10px;
+  margin: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.influencer-card > h1:hover {
+  cursor: pointer;
+  color: #ec2988;
+}
+
+.giftcard-container {
+  text-align: center;
+}
+
+.giftcard-container > h1 {
+  font-size: 35px;
+  margin: 10px;
+  color: #ec2988;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.socialmedia-handlers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.socialmedia-handlers-container > h1 {
+  font-size: 35px;
+  margin: 10px;
+  color: #ec2988;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.handlers-container {
+  display: flex;
+}
+
+.contact-container {
+  display: flex;
+  font-size: 10px;
+  height: 200px;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  background-color: #3a4047;
+}
+
+svg {
+  margin-right: 10px;
+}
+
+.contact-container > div > h1 {
+  display: inline;
+}
+
+input {
+  display: block;
+}
+
+.footer-quick-links-sec {
+  display: flex;
+  justify-content: space-around;
+  background-color: #8c8d94;
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .app-search-container {
+    margin-left: 20px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .nav-app-sec {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-user-sec {
+    gap: 10px;
+  }
+
+  .categories-scroll-container,
+  .product-offers-container,
+  .brands-container,
+  .influencer-container,
+  .giftcard-container,
+  .socialmedia-handlers-container,
+  .contact-container,
+  .footer-quick-links-sec {
+    width: 100%;
+  }
+
+  .bank-img,
+  .image-card {
+    width: 100%;
+  }
+}
+
+/* Add more media queries for larger screens if needed */
